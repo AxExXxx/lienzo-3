@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(135deg, #f8ede3, #f4e4d5);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  border-radius: 15px;
+  max-width: 800px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #663399;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+  line-height: 1.6;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  background: #f4f1eb;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+button, select, input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #6c63ff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover, select:hover, input:hover {
+  background-color: #554cff;
+  transform: scale(1.1);
+}
+
+#drawingCanvas {
+  border: 3px solid #663399;
+  border-radius: 15px;
+  cursor: crosshair;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+#drawingCanvas:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode {
+  background: #333;
+  color: #fff;
+}
+
+body.dark-mode .toolbar {
+  background: #444;
+}
+
+body.dark-mode button {
+  background-color: #777;
+}
+
+body.dark-mode button:hover {
+  background-color: #999;
+}
